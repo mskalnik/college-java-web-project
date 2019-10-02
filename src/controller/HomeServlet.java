@@ -24,11 +24,11 @@ public class HomeServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Repo repo = Repository.getRepository();
+        RequestDispatcher view  = request.getRequestDispatcher("home.jsp");
+        Repo repo               = Repository.getRepository();
         List<Country> countries = repo.getCountries();
 
         request.setAttribute("countries", countries);
-        RequestDispatcher view = request.getRequestDispatcher("index.jsp");
         view.forward(request, response);
     }
 }

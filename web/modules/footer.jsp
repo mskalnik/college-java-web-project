@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mskalnik
-  Date: 24. 08. 2019.
-  Time: 22:13
-  To change this template use File | Settings | File Templates.
---%>
 <footer class="page-footer">
     <div class="container">
         <div class="row">

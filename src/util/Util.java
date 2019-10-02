@@ -3,10 +3,9 @@ package util;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
 
 public class Util {
-    public static String hashToSHA256(String text) {
+    public static String convertToSHA256(String text) {
         MessageDigest digest = null;
         try {
             digest = MessageDigest.getInstance("SHA-256");
