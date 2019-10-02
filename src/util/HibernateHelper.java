@@ -1,6 +1,5 @@
-package dal;
+package util;
 
-import model.Country;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -26,6 +25,7 @@ public class HibernateHelper<T> {
         Session session = HibernateHelper.getFactory().openSession();
         Transaction transaction = null;
         List<T> list = new ArrayList<>();
+
 
         try {
             transaction = session.beginTransaction();

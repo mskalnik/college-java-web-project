@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
+@Table(name = "user", schema = "public", catalog = "java-simple-webshop")
 public class User {
     private int userId;
     private String email;

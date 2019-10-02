@@ -1,11 +1,8 @@
 package dal;
 
 import model.*;
-import org.hibernate.*;
-import org.hibernate.cfg.Configuration;
+import util.HibernateHelper;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class HibernateRepo implements Repo {
@@ -16,7 +13,8 @@ public class HibernateRepo implements Repo {
 
     @Override
     public List<User> getUsers() {
-        return null;
+        HibernateHelper hibernateHelper = new HibernateHelper<User>();
+        return hibernateHelper.get("User");
     }
 
     @Override
