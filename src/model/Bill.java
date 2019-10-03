@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
+@Table(name = "bill", schema = "public", catalog = "java-simple-webshop")
 public class Bill {
     private int billId;
     private Timestamp date;

@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
+@Table(name = "article", schema = "public", catalog = "java-simple-webshop")
 public class Article {
     private int articleId;
     private int count;

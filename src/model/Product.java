@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
+@Table(name = "product", schema = "public", catalog = "java-simple-webshop")
 public class Product {
     private int productId;
     private String name;

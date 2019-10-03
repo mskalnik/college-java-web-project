@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
+@Table(name = "address", schema = "public", catalog = "java-simple-webshop")
 public class Address {
     private int addressId;
     private String street;
